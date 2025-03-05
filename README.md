@@ -45,16 +45,16 @@ Napisz program, który tworzy słownik o nazwie zawierającej Twój numer albumu
 Kluczami powinny być liczby od 10 do 20, a wartościami pseudolosowe łańcuch znaków o długości 8.
 Hint: skorzystaj z modułów string i random.
 
-Link:
-Screenshot:
+Link: https://github.com/JajoKS/ISI_AMW_KS/blob/main/programming-exercises/Ex-6.py
+Screenshot: https://github.com/JajoKS/ISI_AMW_KS/blob/main/screenshots/Ex-6.png
 
 7. task-07
 Stwórz folder utils, a w nim plik 'obliczenia.py', w którym należy zaimplementować cztery 
 wybrane funkcje matematyczne z modułu math. Następnie należy utworzyć plik skrypt7-nr_albumu.py
 i zaimportować w nim ww. funkcje do obliczeń na przykładowych wartościach.
 
-Link:
-Screenshot:
+Link: https://github.com/JajoKS/ISI_AMW_KS/blob/main/programming-exercises/Ex-7/skrypt7-25102.py
+Screenshot: https://github.com/JajoKS/ISI_AMW_KS/blob/main/screenshots/Ex-7.png
 
 8. task-08
 Napisz program, który generuje losowy ciąg znaków o długości 100, a następnie utwórz
@@ -63,5 +63,5 @@ ich wystąpień w ciągu znakowym. Utwórz listę, której każdy element to kro
 zawierająca kolejny klucz z ww. słownika i odpowiadającą mu wartość liczbową.
 Hint: skorzystaj z modułu collections i klasy Counter().
 
-Link:
-Screenshot:
+Link: https://github.com/JajoKS/ISI_AMW_KS/blob/main/programming-exercises/Ex-8.py
+Screenshot: https://github.com/JajoKS/ISI_AMW_KS/blob/main/screenshots/Ex-8.png

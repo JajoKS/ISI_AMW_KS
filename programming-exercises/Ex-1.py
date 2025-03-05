@@ -17,4 +17,4 @@ def funkcja2(char):
 if __name__ == '__main__':
     pyt = input("Podaj znak: ")
     funkcja1(pyt)
-    funckja2(pyt)
+    funkcja2(pyt)

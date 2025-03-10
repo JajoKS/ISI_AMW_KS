@@ -65,3 +65,27 @@ Hint: skorzystaj z modułu collections i klasy Counter().
 
 Link: https://github.com/JajoKS/ISI_AMW_KS/blob/main/programming-exercises/Ex-8.py
 Screenshot: https://github.com/JajoKS/ISI_AMW_KS/blob/main/screenshots/Ex-8.png
+
+9. task-09
+Stwórz klasy Vehicle i Car z polami nazwa, rok_produkcji i przebieg oraz metodami is_old() 
+i is_long_mileage(). Stwórz po jednym obiekcie dla każdej z klas oraz trzeci obiekt, gdzie 
+klasa Car dziedziczy z klasy Vehicle. Dla każdego z obiektów wywołaj obie metody, co najmniej 
+raz użyj dekoratora @property w każdym z trzech przypadków.
+
+Link: 
+Screenshot: 
+
+10. task-10
+Napisz program, który korzystająć z metody chr() wygeneruje łańcuch znakowy z alfabetem, czyli 'abc....xyz'.
+Do pliku alfabet1-numeralbumu.txt zapisz wygenerowany łańcuch znakowy, a do pliku alfabet2-numeralbumu.txt 
+zapisz litery z ww. łańcucha znakowego, tylko że każda litera ma się znaleźć w osobnej linii w pliku.
+Hint: oprócz funkcji write() skorzystaj również z menadżera kontekstu with, żeby nie zapomnieć o zamknięciu pliku.
+
+Link: 
+Screenshot: 
+
+11. task-11
+Odwrócić sentencję podaną przez użytkownika.
+
+Link: 
+Screenshot: 

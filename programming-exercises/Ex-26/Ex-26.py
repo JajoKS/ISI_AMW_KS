@@ -16,7 +16,7 @@ class Home:
 def get_page_content(url):
     headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-    }
+    } #Potrzebny aby uzyskać dostęp do strony
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
         response.encoding = 'utf-8'
@@ -39,8 +39,8 @@ def extract_data(soup):
     return homes
 
 def save_to_csv(homes, filename):
-    with open(filename, 'w', newline='', encoding='utf-8-sig') as csvfile:
-        writer = csv.writer(csvfile,delimiter=";")
+    with open(filename, 'w', newline='', encoding='utf-8-sig') as csvfile: #utf-8-sig to kodowanie UTF-8, ale z dodanym BOM, który pomaga Excelowi rozpoznać kodowanie i poprawnie wyświetlać polskie znaki.
+        writer = csv.writer(csvfile,delimiter=";") #Ustawienie aby robiło przerwy za pomocą średników, ponieważ w excel polski nie oddziela domyślnie za pomocą ',' tylko ';'
         writer.writerow(['Header Name', 'Price', 'Price per m2'])
         for home in homes:
             writer.writerow([home.header_name, home.price, home.price_for_m2])

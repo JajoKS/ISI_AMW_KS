@@ -193,5 +193,5 @@ linku(https://www.otodom.pl/pl/wyniki/sprzedaz/mieszkanie/pomorskie/gdynia/gdyni
 każda oferta ma być obiektem klasy Home, który posiada atrybuty takie jak header_name, price, price_for_m2. 
 Wszystkie obiekty zapisać do słownika oraz do pliku home.csv.
 
-Link: 
-Screenshot: 
+Link: https://github.com/JajoKS/ISI_AMW_KS/tree/main/programming-exercises/Ex-26
+Screenshot: https://github.com/JajoKS/ISI_AMW_KS/blob/main/screenshots/Ex-26.png

@@ -1,14 +1,14 @@
-"""Write a query that uses filter to calculate the average body masses of heavy penguins 
-(those over 4500 grams) and light penguins (those under 3500 grams) simultaneously. 
-Is it possible to do this using where instead of filter?
-ANS: Its impossbile to do it simultaneously by using where, because 
+"""Using an in-memory database, define a table called notes with two text columns author and note and then add three or four rows. 
+Use a query to check that the notes have been stored and that you can (for example) select by author name.
+
+What happens if you try to insert too many or too few values into notes? What happens if you insert a number instead of a string into the note field?
 """
 
 import sqlite3
 conn = sqlite3.connect(":memory:")
 cursor = conn.cursor()
 
-# Create the 'notes' table
+
 cursor.execute("""
 CREATE TABLE notes (
     author TEXT,
@@ -25,14 +25,14 @@ INSERT INTO notes (author, note) VALUES (?, ?);
     ("Andy", "Everything is dandy.")
 ])
 
-# Query to check all notes
+
 cursor.execute("SELECT * FROM notes;")
 rows = cursor.fetchall()
 print("All notes:")
 for row in rows:
     print(row)
 
-# Query to select notes by author
+
 cursor.execute("SELECT * FROM notes WHERE author = 'Duad';")
 print("Duad notes:")
 notes = cursor.fetchall()
@@ -58,5 +58,5 @@ print("\nNotes by Frank (number as a note):")
 for note in frank_notes:
     print(note)
 
-# Clean up
+
 conn.close()

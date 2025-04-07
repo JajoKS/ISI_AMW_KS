@@ -1,0 +1,7 @@
+SELECT work.person, work.job, work.hours
+FROM work
+WHERE work.hours = (
+    SELECT MIN(w.hours)
+    FROM work AS w
+    WHERE w.person = work.person
+);

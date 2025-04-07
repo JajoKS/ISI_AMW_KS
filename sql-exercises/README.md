@@ -79,3 +79,31 @@ Using an in-memory database, define a table called notes with two text columns a
 What happens if you try to insert too many or too few values into notes? What happens if you insert a number instead of a string into the note field?
 
 Screenshot:
+
+13. exercise-13
+What happens if you try to delete rows that don't exist (e.g., all entries in work that refer to juna)?
+
+Screenshot:
+
+14. exercise-14
+Saving and restoring data as text:
+
+Re-create the notes table in an in-memory database and then use SQLite's .output and .dump commands to save the database to a file called notes.sql. 
+Inspect the contents of this file: how has your data been stored?
+
+Start a fresh SQLite session and load notes.sql using the .read command. Inspect the database using .schema and select *: is everything as you expected?
+
+Saving and restoring data in binary format:
+
+Re-create the notes table in an in-memory database once again and use SQLite's .backup command to save it to a file called notes.db. 
+Inspect this file using od -c notes.db or a text editor that can handle binary data: how has your data been stored?
+
+Start a fresh SQLite session and load notes.db using the .restore command. Inspect the database using .schema and select *: is everything as you expected?
+
+Screenshot: 
+
+15. exercise-15
+
+Find the least time each person spent on any job. Your output should show that mik and po each spent 0.5 hours on some job. Can you find a way to show the name of the job as well using the SQL you have seen so far?
+
+Screenshot: 
